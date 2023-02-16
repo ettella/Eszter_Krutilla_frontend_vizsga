@@ -20,7 +20,7 @@
 
     <div class='alert alert-danger'> [[ A hibaüzenet helye ]] </div>
     <div class='mb-2'>
-        <button type='submit' class='btn btn-primary' value='New plushie' [disabled]="plushForm.invalid"(click)="onSubmit(plushForm.value)">Submit</button>
+        <button type='submit' class='btn btn-primary' value='New plushie' (click)="onSubmit(plushForm.value)">Submit</button>
     </div>
 
     <div *ngIf="isSubmit == true">
