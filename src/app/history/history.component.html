@@ -1,0 +1,143 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>About our store</h2>
+            <p>The store was founded in 2011, and since then it won the “Best Plushie Store” award every year.</p>
+            <div class="text-center">
+                <img src="./../../assets/feladat2.png" alt="win" class="img-fluid" style="width:150px">
+            </div>
+        </div>
+
+        <section class="row">
+            <h2 class="col-sm-12">Famous plushies</h2>
+            <!-- <div class="content-box"> -->
+            <div class="col-sm-4 p-2 border border-secondary-subtle rounded-1">
+                <h3>Daniel the Dinosaur</h3>
+                <p>A large dinosaur by famous plushie maker John Plush.</p>
+            </div>
+            <div class="col-sm-4 p-2 border border-secondary-subtle rounded-1">
+                <h3>Ted</h3>
+                <p>The first life-sized teddy bear in the country.
+                </p>
+            </div>
+            <div class="col-sm-4 p-2 border border-secondary-subtle rounded-1">
+                <h3>Coffee Cat</h3>
+                <p>A controversial plushie that promoted drinking coffee to aid web development.
+                </p>
+            </div>
+        <!-- </div> -->
+        </section>
+
+        <h2 class="my-3">Provide feedback</h2>
+        <div class="row">
+            <form class="form-group col-sm-12">
+                <div class="my-2">
+                    <label for="email">Email:</label>
+                    <input type="email"
+                           id="email"
+                           class="form-control"     
+                    />
+                </div>
+                <div class="my-2">
+                    <label for="feedback">Feedback:</label>
+                    <textarea type="feedback"
+                            class="form-control"
+                           id="feedback"
+                           name="feedback"
+                           cols="5" 
+                           rows="5"    
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-5">Submit</button>
+                
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="row">
+        <form class="offset-md-2 offset-lg-3 col-12 col-md-8 col-lg-6" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+
+          <input formControlName="id" name="id" type="hidden" id="id" />
+
+            <div class="mb-2">
+                <label for="title">Title:</label>
+                <input class="form-control"
+                       type="text"
+                       id="title"
+                       name="title"
+                       placeholder="Link"
+                       required
+                       formControlName="title"
+                       [class.is-invalid]="title.touched && title.invalid"
+                    />
+                <p *ngIf="title.hasError('required')" class="invalid-feedback" id="title">
+                  This field is required!
+                </p>
+            </div>
+
+            <div class="mb-2">
+              <label for="medNumber">Media number:</label>
+              <input class="form-control"
+                     type="text"
+                     id="medNumber"
+                     name="medNumber"
+                     formControlName="medNumber"
+                     [class.is-invalid]="medNumber.touched && medNumber.invalid"
+                    />
+                <p *ngIf="medNumber.hasError('required')" class="invalid-feedback" id="medNumber">
+                  This field is required!
+                </p>
+                <p *ngIf="medNumber.hasError('minlength')" class="invalid-feedback" id="medNumber">
+                  You have to type at least 10 character!
+                </p>
+                <p *ngIf="medNumber.hasError('maxlength')" class="invalid-feedback" id="medNumber">
+                  You have to type maximum 13 character!
+                </p>
+          </div> -->
+
+            <!-- <div class="mb-2">
+                <label for="content">Content:</label>
+                <textarea class="form-control"
+                       id="content"
+                       name="content"
+                       cols="10"
+                       rows="10"
+                       formControlName="content"
+                       [class.is-invalid]="content.touched && content.invalid"
+                       ></textarea>
+                <p *ngIf="content.hasError('required')" class="invalid-feedback" id="content">
+                  This field is required!
+                </p>
+            </div> -->
+
+<!--             
+            <div class="my-4 text-center">
+                <button class="btn btn-outline-primary px-5 py-2 btn-lg" type="submit" [disabled]="myForm.invalid"
+                 >Add Book</button> -->
+                 <!-- (myForm.value) -->
+            <!-- </div> -->
+
+            <!-- <div *ngIf="isSubmit == true">
+              <ol *ngFor="let b of books; let i = index">
+                <li>Title: {{b.title}}</li>
+                <li>Media Number: {{b.medNumber}}</li>
+                <li>Content: {{b.content}}</li>
+              </ol>
+            </div>
+
+          </form> -->
+
+</div>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  Name: string = 'Eszter Krutilla'
   title = 'frontend-vizsga-230216';
 }

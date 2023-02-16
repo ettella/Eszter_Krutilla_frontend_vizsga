@@ -1,1 +1,8 @@
-<p>plushie works!</p>
+<div class="container-fluid my-3 border border-secondary-subtle">
+    <div class="row m-4">
+        <div class="col-xs-12" *ngFor="let plush of plushies">
+            <h3>Name of the product: {{plush.name}} <i>${{plush.price}} </i></h3>
+            <hr>
+        </div>
+    </div>
+</div>

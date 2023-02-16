@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Plushie } from './plushie-model';
 
 @Component({
   selector: 'app-plushie',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./plushie.component.scss']
 })
 export class PlushieComponent {
+
+  @Input() plushies: Plushie[] = [];
 
 }

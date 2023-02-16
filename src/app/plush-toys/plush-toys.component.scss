@@ -1,0 +1,37 @@
+@import './colors';
+
+.text-box {
+    display:block;
+    border-radius: 10px;
+    padding: 10px;
+
+    .p-box {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        color: $quote-text;
+        margin: 10px 0 10px 0;
+        font-size: 2rem;
+    }
+    background-color: $quote-backgound;
+}
+
+ul {
+    li {
+        color: $list-text;
+        // @include list-font-weight
+    }
+}
+
+.list-font-weight {
+    font-weight: 700;
+}
+
+.img-box {
+    display: flex;
+    justify-content: flex-end;
+    img {
+        width:25%;
+    }
+}

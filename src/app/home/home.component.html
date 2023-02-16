@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div class="container">
+
+    <div class="row">
+        <header class="col-xs-12">
+            <h1 class="my-3">Welcome to the home page of the Acme Plushie Store!</h1>
+        </header>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 my-3">
+            <section>On our site, you can learn about the history of various plushies and other types of stuffed animals and the founding of our store. You can also request new plushies to be added and view our current inventory.</section>
+        </div>
+        <div class="col-xs-12 my-3">
+            <section>Our site is still under active development, thus there might be some errors, bugs that we didn’t manage to squash yet. Thank you for your understanding.</section>
+        </div>
+    </div>
+
+    <app-plushie [plushies]="plushies" 
+    ><div *ngFor="let ps of plushies"></div>
+    </app-plushie>
+
+</div>
