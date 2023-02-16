@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { PlushieComponent } from './plushie/plushie.component';
+import { NewPlushieComponent } from './new-plushie/new-plushie.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    PlushieComponent,
+    NewPlushieComponent,
+    InventoryComponent,
   ],
   imports: [
     BrowserModule,
